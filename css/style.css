@@ -538,3 +538,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.form-label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: -0.5rem;
+    font-family: 'Georgia', serif;
+}
