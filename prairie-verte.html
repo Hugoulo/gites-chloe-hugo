@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Prairie Verte — Chez Chlo & Hugo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gite.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">🍎 Chez Chlo & Hugo</a></div>
+            <ul>
+                <li><a href="index.html#cote-champ">Côté Champ</a></li>
+                <li><a href="index.html#escale-normande">Escale Normande</a></li>
+                <li><a href="index.html#localisation">Localisation</a></li>
+                <li><a href="index.html#contact">Contact & Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CARROUSEL PHOTO -->
+    <section class="gite-hero">
+        <div class="carrousel-gite">
+            <img class="carrousel-img active" src="images/prairie-verte-1.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(0)">
+            <img class="carrousel-img" src="images/prairie-verte-2.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(1)">
+            <img class="carrousel-img" src="images/prairie-verte-3.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(2)">
+            <img class="carrousel-img" src="images/prairie-verte-4.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(3)">
+            <img class="carrousel-img" src="images/prairie-verte-5.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(4)">
+            <img class="carrousel-img" src="images/prairie-verte-6.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(5)">
+            <img class="carrousel-img" src="images/prairie-verte-7.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(6)">
+            <img class="carrousel-img" src="images/prairie-verte-8.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(7)">
+            <img class="carrousel-img" src="images/prairie-verte-9.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(8)">
+            <img class="carrousel-img" src="images/prairie-verte-10.jpg" alt="La Prairie Verte" onclick="ouvrirLightbox(9)">
+            <button class="btn-gauche">&#8592;</button>
+            <button class="btn-droite">&#8594;</button>
+            <div class="carrousel-compteur">1 / 10</div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="lightbox-fermer">✕</button>
+        <button id="lightbox-gauche">&#8592;</button>
+        <img id="lightbox-img" src="" alt="Photo agrandie">
+        <button id="lightbox-droite">&#8594;</button>
+        <div id="lightbox-compteur"></div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="gite-contenu">
+
+        <div class="gite-header">
+            <div>
+                <span class="gite-categorie">🌾 Côté Champ</span>
+                <h1>La Prairie Verte</h1>
+                <p class="gite-capacite">👥 4 personnes &nbsp;·&nbsp; 🛏️ 2 chambres</p>
+            </div>
+            <a href="index.html#contact" class="bouton">Réserver</a>
+        </div>
+
+        <p class="gite-accroche">À seulement 10 minutes des plages de Cabourg et Houlgate, La Prairie Verte est un cottage 4★ qui conjugue charme normand et confort moderne.</p>
+        <p class="gite-accroche">Entièrement rénové, il a conservé son âme et ses colombages tout en offrant un sauna privatif. Avec sa vue bucolique sur le Pays d'Auge, c'est un véritable cocon de sérénité pour se ressourcer en couple ou en famille, entre mer, campagne et patrimoine.</p>
+
+        <!-- L'ESPRIT DU LIEU -->
+        <div class="gite-section">
+            <h2>🟢 L'esprit du lieu</h2>
+            <ul class="gite-liste">
+                <li>🪷 Cottage de charme classé 4★, entièrement rénové et privatif</li>
+                <li>🌾 Vue bucolique sur le Pays d'Auge, ambiance typiquement normande</li>
+                <li>🔥 Sauna privatif & salle de bain balnéo hydromassante</li>
+                <li>🏡 Atmosphère chaleureuse : colombages, boiseries, esprit patrimoine normand</li>
+                <li>🌊 À seulement 10 min des plages et proche des balades en pleine nature</li>
+            </ul>
+        </div>
+
+        <!-- LES ESPACES -->
+        <div class="gite-section">
+            <h2>🟢 Les espaces</h2>
+            <ul class="gite-liste">
+                <li>🛋️ Séjour cosy avec salon, TV écran plat et cuisine moderne toute équipée</li>
+                <li>🛏️ 2 chambres indépendantes :
+                    <ul class="gite-sous-liste">
+                        <li>▸ 1 chambre double (lit 160cm) avec TV écran plat</li>
+                        <li>▸ 1 chambre twin avec 2 lits simples grande longueur (90x200)</li>
+                    </ul>
+                </li>
+                <li>🚿 Salle de bain avec douche balnéo hydromassante</li>
+                <li>🔥 Sauna privatif</li>
+                <li>🚽 WC séparé</li>
+                <li>🧺 Buanderie complète : lave-linge, sèche-linge, congélateur, 2ème réfrigérateur, ventilateur, table & fer à repasser</li>
+                <li>☕ Équipements cuisine : cafetière italienne, expresso à dosettes, bouilloire, grille-pain, appareil à raclette</li>
+                <li>👶 Équipements bébé : lit parapluie (sans matelas ni draps), chaise haute, baignoire bébé</li>
+                <li>🪴 Jardin privé aménagé et paysagé avec barbecue</li>
+            </ul>
+        </div>
+
+        <!-- LOISIRS -->
+        <div class="gite-section">
+            <h2>🟢 Loisirs & activités</h2>
+            <ul class="gite-liste">
+                <li>🧸 Jeux pour enfants</li>
+                <li>🚲 Local à vélos sécurisé</li>
+                <li>🧺 Table de pique-nique au bord de la rivière l'Ancre</li>
+                <li>🏖️ À proximité : plages, équitation, golf, tennis, pêche en mer, voile, balades en mer, casino, shopping, marchés locaux, Deauville, Honfleur, Étretat, Plages du Débarquement, Mont Saint-Michel…</li>
+            </ul>
+        </div>
+
+        <!-- INFOS PRATIQUES -->
+        <div class="gite-section">
+            <h2>🟢 Infos pratiques</h2>
+            <ul class="gite-liste">
+                <li>🅿️ Parking gratuit</li>
+                <li>🛍️ Commerces et marchés accessibles rapidement</li>
+                <li>🧹 Option ménage (40€)</li>
+                <li>🛏️ Linge de lit fourni</li>
+                <li>🪜 Quelques marches à l'entrée</li>
+                <li>🚫 Animaux non acceptés</li>
+            </ul>
+        </div>
+
+        <div class="gite-cta">
+            <a href="index.html#contact" class="bouton">Demander une réservation</a>
+            <a href="index.html" class="bouton-outline">← Voir tous les gîtes</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Chez Chlo & Hugo · Dozulé, Normandie</p>
+        <p>contact@chez-chlo-et-hugo.fr</p>
+    </footer>
+
+    <script src="js/gite.js"></script>
+
+</body>
+</html>

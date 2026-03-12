@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Grange — Chez Chlo & Hugo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gite.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">🍎 Chez Chlo & Hugo</a></div>
+            <ul>
+                <li><a href="index.html#cote-champ">Côté Champ</a></li>
+                <li><a href="index.html#escale-normande">Escale Normande</a></li>
+                <li><a href="index.html#localisation">Localisation</a></li>
+                <li><a href="index.html#contact">Contact & Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CARROUSEL PHOTO -->
+    <section class="gite-hero">
+        <div class="carrousel-gite">
+           <img class="carrousel-img active" src="images/grange-1.jpg" alt="La Grange" onclick="ouvrirLightbox(0)">
+            <img class="carrousel-img" src="images/grange-2.jpg" alt="La Grange" onclick="ouvrirLightbox(1)">
+            <img class="carrousel-img" src="images/grange-3.jpg" alt="La Grange" onclick="ouvrirLightbox(2)">
+            <img class="carrousel-img" src="images/grange-4.jpg" alt="La Grange" onclick="ouvrirLightbox(3)">
+            <img class="carrousel-img" src="images/grange-5.jpg" alt="La Grange" onclick="ouvrirLightbox(4)">
+            <img class="carrousel-img" src="images/grange-6.jpg" alt="La Grange" onclick="ouvrirLightbox(5)">
+            <img class="carrousel-img" src="images/grange-7.jpg" alt="La Grange" onclick="ouvrirLightbox(6)">
+            <img class="carrousel-img" src="images/grange-8.jpg" alt="La Grange" onclick="ouvrirLightbox(7)">
+            <img class="carrousel-img" src="images/grange-9.jpg" alt="La Grange" onclick="ouvrirLightbox(8)">
+            <img class="carrousel-img" src="images/grange-10.jpg" alt="La Grange" onclick="ouvrirLightbox(9)">
+            <button class="btn-gauche">&#8592;</button>
+            <button class="btn-droite">&#8594;</button>
+            <div class="carrousel-compteur">1 / 10</div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="lightbox-fermer">✕</button>
+        <button id="lightbox-gauche">&#8592;</button>
+        <img id="lightbox-img" src="" alt="Photo agrandie">
+        <button id="lightbox-droite">&#8594;</button>
+        <div id="lightbox-compteur"></div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="gite-contenu">
+
+        <div class="gite-header">
+            <div>
+                <span class="gite-categorie">🌾 Côté Champ</span>
+                <h1>La Grange</h1>
+                <p class="gite-capacite">👥 6 personnes &nbsp;·&nbsp; 🛏️ 3 chambres</p>
+            </div>
+            <a href="index.html#contact" class="bouton">Réserver</a>
+        </div>
+
+        <p class="gite-accroche">✨ Bienvenue à La Grange, cottage VIP. À 10 min de Cabourg et Houlgate, découvrez un lieu au charme brut et chaleureux, où bois, pierre et cuivre créent une atmosphère unique.</p>
+        <p class="gite-accroche">Profitez de l'espace balnéo privé, de la cheminée, du babyfoot, d'une terrasse avec brasero-barbecue et tiki bar.</p>
+        <p class="gite-accroche italic">Un havre de détente pour se ressourcer en famille ou entre amis, entre mer, nature et patrimoine normand.</p>
+
+        <!-- L'ESPRIT DU LIEU -->
+        <div class="gite-section">
+            <h2>🟢 L'esprit du lieu</h2>
+            <ul class="gite-liste">
+                <li>🛁 Espace balnéo privatif : baignoire à remous 2 pers. avec chromothérapie</li>
+                <li>🔥 Ambiance cocooning : cheminée, babyfoot, instruments de musique anciens</li>
+                <li>🌞 Extérieur aménagé : terrasse bois, brasero-barbecue, tiki bar couvert, transats</li>
+                <li>🌊 Jardin privatif avec accès aux promenades le long de la rivière de l'Ancre</li>
+            </ul>
+        </div>
+
+        <!-- LES ESPACES -->
+        <div class="gite-section">
+            <h2>🟢 Les espaces</h2>
+            <ul class="gite-liste">
+                <li>🪑 Salon lumineux : canapé d'angle, TV écran plat, bar à verres, radio vintage</li>
+                <li>🍳 Cuisine ouverte & équipée : vaisselle en grès, électroménager complet, bar à café (Senseo, filtre, Bodum, etc.), appareils pour repas conviviaux (raclette, plancha, etc.)</li>
+                <li>🎲 Bureau & coin jeux à l'étage</li>
+                <li>🛏️ 3 chambres cocooning :
+                    <ul class="gite-sous-liste">
+                        <li>▸ 🛌 2 chambres lit double (160x200, literie haut de gamme)</li>
+                        <li>▸ 📺 1 chambre twin (2 lits simples, TV écran plat)</li>
+                    </ul>
+                </li>
+                <li>🚿 2 salles de bain dont :
+                    <ul class="gite-sous-liste">
+                        <li>▸ 🧼 à l'étage : douche & toilettes séparés</li>
+                        <li>▸ 🛀 au rez-de-chaussée : espace balnéo avec bain à remous & luminothérapie</li>
+                    </ul>
+                </li>
+                <li>👶 Équipements famille : lit parapluie, chaise haute, couverts bébé</li>
+                <li>🧺 Buanderie complète : lave-linge, fer & table à repasser</li>
+            </ul>
+        </div>
+
+        <!-- LOISIRS -->
+        <div class="gite-section">
+            <h2>🟢 Loisirs & activités</h2>
+            <ul class="gite-liste">
+                <li>⚽ Babyfoot, jeux de société</li>
+                <li>🧺 Pique-nique au bord de la rivière</li>
+                <li>🏖️ À proximité : plages, équitation, golf, sports nautiques, casino, balades en mer, marchés locaux, Deauville, Honfleur, Plages du Débarquement (moins de 30 min)</li>
+            </ul>
+        </div>
+
+        <!-- INFOS PRATIQUES -->
+        <div class="gite-section">
+            <h2>🟢 Infos pratiques</h2>
+            <ul class="gite-liste">
+                <li>💻 Fibre haut débit</li>
+                <li>🅿️ Parking gratuit (3 places)</li>
+                <li>🛍️ Commerces à 3 min en voiture</li>
+                <li>🚫 Animaux non acceptés</li>
+                <li>🧹 Option ménage (50€) et départ tardif (40€ selon dispo)</li>
+            </ul>
+        </div>
+
+        <div class="gite-cta">
+            <a href="index.html#contact" class="bouton">Demander une réservation</a>
+            <a href="index.html" class="bouton-outline">← Voir tous les gîtes</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Chez Chlo & Hugo · Dozulé, Normandie</p>
+        <p>contact@chez-chlo-et-hugo.fr</p>
+    </footer>
+
+   
+    <script src="js/gite.js"></script>
+
+</body>
+</html>

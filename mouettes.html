@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Champ des Mouettes — Chez Chlo & Hugo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gite.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">🍎 Chez Chlo & Hugo</a></div>
+            <ul>
+                <li><a href="index.html#cote-champ">Côté Champ</a></li>
+                <li><a href="index.html#escale-normande">Escale Normande</a></li>
+                <li><a href="index.html#localisation">Localisation</a></li>
+                <li><a href="index.html#contact">Contact & Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CARROUSEL PHOTO -->
+    <section class="gite-hero">
+        <div class="carrousel-gite">
+            <img class="carrousel-img active" src="images/mouettes-1.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(0)">
+            <img class="carrousel-img" src="images/mouettes-2.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(1)">
+            <img class="carrousel-img" src="images/mouettes-3.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(2)">
+            <img class="carrousel-img" src="images/mouettes-4.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(3)">
+            <img class="carrousel-img" src="images/mouettes-5.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(4)">
+            <img class="carrousel-img" src="images/mouettes-6.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(5)">
+            <img class="carrousel-img" src="images/mouettes-7.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(6)">
+            <img class="carrousel-img" src="images/mouettes-8.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(7)">
+            <img class="carrousel-img" src="images/mouettes-9.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(8)">
+            <img class="carrousel-img" src="images/mouettes-10.jpg" alt="Le Champ des Mouettes" onclick="ouvrirLightbox(9)">
+            <button class="btn-gauche">&#8592;</button>
+            <button class="btn-droite">&#8594;</button>
+            <div class="carrousel-compteur">1 / 10</div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="lightbox-fermer">✕</button>
+        <button id="lightbox-gauche">&#8592;</button>
+        <img id="lightbox-img" src="" alt="Photo agrandie">
+        <button id="lightbox-droite">&#8594;</button>
+        <div id="lightbox-compteur"></div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="gite-contenu">
+
+        <div class="gite-header">
+            <div>
+                <span class="gite-categorie">🌊 Escale Normande</span>
+                <h1>Le Champ des Mouettes</h1>
+                <p class="gite-capacite">👥 6 personnes &nbsp;·&nbsp; 🛏️ 3 chambres</p>
+            </div>
+            <a href="index.html#contact" class="bouton">Réserver</a>
+        </div>
+
+        <p class="gite-accroche">À seulement 10 minutes des plages de Cabourg, Le Champ des Mouettes est une maison contemporaine pensée pour ceux qui veulent profiter de la Normandie sans perdre une minute.</p>
+        <p class="gite-accroche">Face à une vue panoramique sur les collines et le château, notre maison offre le compromis parfait entre confort moderne et situation géographique ultra-privilégiée.</p>
+        <p class="gite-accroche italic">Une maison contemporaine et chaleureuse entre terre et mer, où chaque lever de soleil sur les collines invite à ralentir et profiter du moment présent.</p>
+
+        <!-- L'ESPRIT DU LIEU -->
+        <div class="gite-section">
+            <h2>🟢 L'esprit du lieu</h2>
+            <ul class="gite-liste">
+                <li>🏡 Maison neuve contemporaine classée *** Meublé de Tourisme, nichée dans un petit hameau</li>
+                <li>🌳 Grand jardin arboré de 2000 m² avec salon de jardin, barbecue, brasero et babyfoot</li>
+                <li>🔥 Ambiance cocooning : poêle à bois, teintes naturelles, mobilier chaleureux</li>
+                <li>🚲 Balades à pied ou à vélo au départ du gîte</li>
+                <li>🚗 À 3 km de la sortie d'autoroute — Caen et Pont-l'Évêque à 20 min, Houlgate/Cabourg à 10-15 min, Deauville à 25 min</li>
+            </ul>
+        </div>
+
+        <!-- LES ESPACES -->
+        <div class="gite-section">
+            <h2>🟢 Les espaces</h2>
+            <ul class="gite-liste">
+                <li>🍽️ Grande pièce de vie lumineuse avec poêle à bois, babyfoot, TV écran plat</li>
+                <li>👩‍🍳 Cuisine ouverte moderne et entièrement équipée : plaques à induction, four, micro-ondes, réfrigérateur, lave-vaisselle, lave-linge, sèche-linge, cafetières (Nespresso et cafetière à piston), bouilloire, grille-pain, cave à vin, appareils à raclette, vaisselle complète et accessoires de cuisine (verres à champagne, couteaux à huîtres, shaker, etc.)</li>
+                <li>🛏️ 3 chambres confortables :
+                    <ul class="gite-sous-liste">
+                        <li>▸ 1 chambre au rez-de-chaussée avec lit Queen Size (160x200)</li>
+                        <li>▸ 1 chambre à l'étage avec lit Queen Size (160x200) et bureau</li>
+                        <li>▸ 1 chambre à l'étage avec 2 lits simples</li>
+                    </ul>
+                </li>
+                <li>🪟 Stores occultants, literie de qualité, couettes et linge de lit fourni</li>
+                <li>🛁 Salle de bain lumineuse à l'étage avec baignoire, sèche-cheveux et WC</li>
+                <li>🚻 WC séparé au rez-de-chaussée</li>
+                <li>🧴 Grand dressing indépendant avec penderies et table à repasser</li>
+                <li>💻 Espace de travail et Wi-Fi rapide et stable</li>
+                <li>🔌 Chargeurs pour téléphone dans chaque pièce</li>
+                <li>🌬️ Ventilateur à disposition</li>
+                <li>👶 Équipements bébé : lit parapluie (sans matelas ni drap), chaise haute, baignoire bébé</li>
+            </ul>
+        </div>
+
+        <!-- LOISIRS -->
+        <div class="gite-section">
+            <h2>🟢 Loisirs & détente</h2>
+            <ul class="gite-liste">
+                <li>🏓 Table de ping-pong</li>
+                <li>🔥 Brasero et barbecue pour vos soirées d'été</li>
+                <li>🪑 Terrasses aménagées, dont une couverte : table, chaises, poufs et salon de jardin</li>
+                <li>🎯 Babyfoot, jeux de société et coffre à jouets pour petits et grands</li>
+                <li>🚲 Local à vélos sécurisé</li>
+            </ul>
+        </div>
+
+        <!-- INFOS PRATIQUES -->
+        <div class="gite-section">
+            <h2>🟢 Infos pratiques</h2>
+            <ul class="gite-liste">
+                <li>🕓 Arrivée autonome à partir de 17h – Départ à 10h</li>
+                <li>🧹 Ménage fin de séjour en option (50€)</li>
+                <li>🕰️ Départ tardif possible (40€, selon disponibilité)</li>
+                <li>🧺 Kit d'arrivée fourni (papier WC, pastilles lave-vaisselle, huile, sel, etc.)</li>
+                <li>🪟 Linge de lit, serviettes de bain et torchons inclus</li>
+                <li>🅿️ Stationnement gratuit sur place</li>
+                <li>🚫 Animaux non admis</li>
+            </ul>
+        </div>
+
+        <div class="gite-cta">
+            <a href="index.html#contact" class="bouton">Demander une réservation</a>
+            <a href="index.html" class="bouton-outline">← Voir tous les gîtes</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Chez Chlo & Hugo · Dozulé, Normandie</p>
+        <p>contact@chez-chlo-et-hugo.fr</p>
+    </footer>
+
+    <script src="js/gite.js"></script>
+
+</body>
+</html>

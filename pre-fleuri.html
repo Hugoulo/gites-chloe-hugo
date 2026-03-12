@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Pré Fleuri — Chez Chlo & Hugo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gite.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">🍎 Chez Chlo & Hugo</a></div>
+            <ul>
+                <li><a href="index.html#cote-champ">Côté Champ</a></li>
+                <li><a href="index.html#escale-normande">Escale Normande</a></li>
+                <li><a href="index.html#localisation">Localisation</a></li>
+                <li><a href="index.html#contact">Contact & Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CARROUSEL PHOTO -->
+    <section class="gite-hero">
+        <div class="carrousel-gite">
+            <img class="carrousel-img active" src="images/pre-fleuri-1.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(0)">
+            <img class="carrousel-img" src="images/pre-fleuri-2.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(1)">
+            <img class="carrousel-img" src="images/pre-fleuri-3.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(2)">
+            <img class="carrousel-img" src="images/pre-fleuri-4.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(3)">
+            <img class="carrousel-img" src="images/pre-fleuri-5.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(4)">
+            <img class="carrousel-img" src="images/pre-fleuri-6.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(5)">
+            <img class="carrousel-img" src="images/pre-fleuri-7.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(6)">
+            <img class="carrousel-img" src="images/pre-fleuri-8.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(7)">
+            <img class="carrousel-img" src="images/pre-fleuri-9.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(8)">
+            <img class="carrousel-img" src="images/pre-fleuri-10.jpg" alt="Le Pré Fleuri" onclick="ouvrirLightbox(9)">
+            <button class="btn-gauche">&#8592;</button>
+            <button class="btn-droite">&#8594;</button>
+            <div class="carrousel-compteur">1 / 10</div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="lightbox-fermer">✕</button>
+        <button id="lightbox-gauche">&#8592;</button>
+        <img id="lightbox-img" src="" alt="Photo agrandie">
+        <button id="lightbox-droite">&#8594;</button>
+        <div id="lightbox-compteur"></div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="gite-contenu">
+
+        <div class="gite-header">
+            <div>
+                <span class="gite-categorie">🌾 Côté Champ</span>
+                <h1>Le Pré Fleuri</h1>
+                <p class="gite-capacite">👥 4 personnes &nbsp;·&nbsp; 🛏️ 2 chambres</p>
+            </div>
+            <a href="index.html#contact" class="bouton">Réserver</a>
+        </div>
+
+        <p class="gite-accroche">À quelques minutes des plages et des commerces, Le Pré Fleuri est un cottage de charme où règnent calme et douceur de vivre. Niché dans la campagne du Pays d'Auge, ce gîte de plain-pied invite à la détente : admirez les couchers de soleil sous les pommiers, écoutez le chant des oiseaux, croisez vaches et écureuils au détour d'une promenade.</p>
+        <p class="gite-accroche italic">Un lieu paisible, idéal pour se ressourcer en couple ou en famille.</p>
+
+        <!-- L'ESPRIT DU LIEU -->
+        <div class="gite-section">
+            <h2>🟢 L'esprit du lieu</h2>
+            <ul class="gite-liste">
+                <li>🌾 Cottage cosy de plain-pied, exposé plein sud et entièrement rénové</li>
+                <li>🔥 Décor chaleureux avec cheminée électrique et ambiance cocooning</li>
+                <li>🍎 Vue campagne, rencontres avec les vaches, chevaux, canards et poules d'eau</li>
+                <li>🪴 Cour paysagée avec pergola, salon de jardin, fauteuil suspendu et transats</li>
+                <li>🌅 Coucher de soleil sous les pommiers et table de pique-nique au bord de la rivière l'Ancre</li>
+            </ul>
+        </div>
+
+        <!-- LES ESPACES -->
+        <div class="gite-section">
+            <h2>🟢 Les espaces</h2>
+            <ul class="gite-liste">
+                <li>🍽️ Séjour lumineux avec cuisine entièrement équipée</li>
+                <li>🛋️ Salon convivial : grand canapé 4 places, TV écran plat, penderie, cheminée électrique</li>
+                <li>🛏️ 2 chambres confortables :
+                    <ul class="gite-sous-liste">
+                        <li>▸ 1 chambre double (lit 140x190) avec armoire penderie</li>
+                        <li>▸ 1 chambre twin (2 lits 90x190) avec espace de télétravail</li>
+                    </ul>
+                </li>
+                <li>🪞 Grand miroir dans chaque chambre</li>
+                <li>🛌 Matelas "anti-stress" à 7 zones de confort</li>
+                <li>🚿 Salle de bain avec douche hydromassante, sèche-serviettes, sèche-cheveux et miroir grossissant</li>
+                <li>🚽 WC séparé</li>
+                <li>🧺 Buanderie complète : lave-linge, sèche-linge, lave-vaisselle, fer & table à repasser, ventilateur</li>
+                <li>☕ Cuisine équipée : cafetière dosettes Massimo, bouilloire, grille-pain, appareil à raclette, réfrigérateur & congélateur</li>
+                <li>👶 Équipements bébé : lit parapluie, chaise haute, couverts et baignoire bébé</li>
+            </ul>
+        </div>
+
+        <!-- LOISIRS -->
+        <div class="gite-section">
+            <h2>🟢 Loisirs & activités</h2>
+            <ul class="gite-liste">
+                <li>🧩 Jeux de société, jeux pour enfants et jeux d'extérieur</li>
+                <li>🚲 Local à vélos sécurisé</li>
+                <li>🧺 Table de pique-nique au bord de la rivière l'Ancre</li>
+                <li>🏖️ À proximité : plages, équitation, golf, tennis, pêche en mer, balades en mer, voile, casino, shopping, marchés locaux, Deauville, Honfleur, Étretat, Plages du Débarquement, Mont Saint-Michel, ULM, saut en parachute…</li>
+            </ul>
+        </div>
+
+        <!-- INFOS PRATIQUES -->
+        <div class="gite-section">
+            <h2>🟢 Infos pratiques</h2>
+            <ul class="gite-liste">
+                <li>💻 Internet</li>
+                <li>🅿️ Parking gratuit</li>
+                <li>🛍️ Commerces à proximité immédiate</li>
+                <li>🧹 Option ménage (40€)</li>
+                <li>🛏️ Linge de lit inclus</li>
+                <li>🪜 Quelques marches à l'entrée</li>
+                <li>🚫 Animaux non acceptés</li>
+            </ul>
+        </div>
+
+        <p class="gite-conclusion">👉 Un refuge champêtre où le temps ralentit, entre authenticité normande et sérénité de la campagne.</p>
+
+        <div class="gite-cta">
+            <a href="index.html#contact" class="bouton">Demander une réservation</a>
+            <a href="index.html" class="bouton-outline">← Voir tous les gîtes</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Chez Chlo & Hugo · Dozulé, Normandie</p>
+        <p>contact@chez-chlo-et-hugo.fr</p>
+    </footer>
+
+    <script src="js/gite.js"></script>
+
+</body>
+</html>
