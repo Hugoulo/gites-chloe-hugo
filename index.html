@@ -348,15 +348,15 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
+<!-- CONTACT -->
     <section id="contact">
         <h2>Contact & Réservation</h2>
         <p>Écrivez-nous directement pour vérifier les disponibilités et réserver :</p>
-        <form id="formulaire">
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <input type="tel" placeholder="Votre téléphone">
-            <select>
+        <form id="formulaire" action="https://formspree.io/f/mkoqbajl" method="POST">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="tel" name="telephone" placeholder="Votre téléphone">
+            <select name="gite">
                 <option value="">Quel gîte vous intéresse ?</option>
                 <optgroup label="🌾 Côté Champ">
                     <option>Le Pré Fleuri</option>
@@ -368,21 +368,21 @@
                     <option>Le Pré des Plages</option>
                 </optgroup>
             </select>
-            <select>
+            <select name="source">
                 <option value="">Comment nous avez-vous connu ?</option>
                 <option>Recommandation d'un proche</option>
                 <option>Je suis déjà venu</option>
                 <option>Autre</option>
             </select>
             <label class="form-label">Date d'arrivée souhaitée</label>
-            <input type="date">
+            <input type="date" name="arrivee">
             <label class="form-label">Date de départ souhaitée</label>
-            <input type="date">          
-            <textarea placeholder="Votre message (nombre de personnes, questions…)"></textarea>
+            <input type="date" name="depart">
+            <textarea name="message" placeholder="Votre message (nombre de personnes, questions…)"></textarea>
             <button type="submit">Envoyer ma demande</button>
         </form>
     </section>
-
+    
     <!-- FOOTER -->
     <footer>
         <p>© 2026 Chez Chloée & Hugo · Dozulé, Normandie</p>
