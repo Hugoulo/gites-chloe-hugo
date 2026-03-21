@@ -1,0 +1,66 @@
+/* ========================
+   MENTIONS LÉGALES
+======================== */
+.mentions-contenu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem 5rem;
+}
+
+.mentions-contenu h1 {
+    font-size: 2rem;
+    color: #2c4a2e;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #2c4a2e;
+}
+
+.mentions-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 2rem;
+    background-color: #f9f9f4;
+    border-radius: 8px;
+    border-left: 4px solid #2c4a2e;
+}
+
+.mentions-section h2 {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #2c4a2e;
+}
+
+.mentions-section p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.mentions-section ul {
+    list-style: none;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.mentions-section ul li {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding: 2px 0;
+}
+
+.mentions-section a {
+    color: #2c4a2e;
+    text-decoration: underline;
+}
+
+.mentions-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .mentions-contenu {
+        padding: 2rem 1rem 3rem;
+    }
+}
