@@ -30,17 +30,21 @@ function parseIcal(text) {
             fin = null;
         }
         if (inEvent && line.startsWith('DTSTART')) {
-            debut = parseDate(line.split(':')[1]);
+            const val = line.split(':')[1];
+            if (val) debut = parseDate(val);
         }
         if (inEvent && line.startsWith('DTEND')) {
-            fin = parseDate(line.split(':')[1]);
+            const val = line.split(':')[1];
+            if (val) fin = parseDate(val);
         }
-        if (line === 'END:VEVENT' && debut && fin) {
+        if (line === 'END:VEVENT') {
             inEvent = false;
-            let current = new Date(debut);
-            while (current < fin) {
-                dates.push(formatDate(current));
-                current.setDate(current.getDate() + 1);
+            if (debut && fin) {
+                let current = new Date(debut);
+                while (current < fin) {
+                    dates.push(formatDate(current));
+                    current.setDate(current.getDate() + 1);
+                }
             }
         }
     }
