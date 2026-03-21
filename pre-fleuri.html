@@ -50,6 +50,18 @@
         <div id="lightbox-compteur"></div>
     </div>
 
+    <!-- CALENDRIER -->
+    <section class="gite-calendrier">
+        <div class="gite-contenu" style="padding-bottom: 0">
+            <h2 style="text-align:center; color:#2c4a2e; margin-bottom:0.5rem">📅 Disponibilités</h2>
+            <div class="cal-legende">
+                <span><div class="pastille libre"></div> Disponible</span>
+                <span><div class="pastille occupe"></div> Occupé</span>
+            </div>
+            <div id="calendrier-gite"></div>
+        </div>
+    </section>
+    
     <!-- CONTENU PRINCIPAL -->
     <main class="gite-contenu">
 
@@ -140,6 +152,11 @@
     </footer>
 
     <script src="js/gite.js"></script>
+
+    <script src="js/calendrier.js"></script>
+    <script>
+        chargerCalendrier('https://www.airbnb.fr/calendar/ical/35506240.ics?t=b981d8258c964ccc971bc0782e55c688', 'calendrier-gite');
+    </script>
 
 </body>
 </html>
